@@ -14,7 +14,7 @@
 #include "msm_camera_i2c.h"
 
 #undef CDBG
-#ifdef CONFIG_MSMB_CAMERA_ZUK_DEBUG
+#ifdef CONFIG_ZUK_CAMERA_DEBUG
 #define CDBG(fmt, args...) pr_debug(fmt, ##args)
 #define S_I2C_DBG(fmt, args...) pr_debug(fmt, ##args)
 #else

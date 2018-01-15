@@ -1,1 +1,1 @@
-obj-$(CONFIG_MSMB_CAMERA_ZUK) += cpp/
+obj-$(CONFIG_ZUK_CAMERA) += cpp/

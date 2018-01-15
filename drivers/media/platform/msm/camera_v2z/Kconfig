@@ -1,6 +1,6 @@
 config MSM_CAMERA_SENSOR
 	    bool "Qualcomm MSM camera sensor support"
-	    depends on MSMB_CAMERA_ZUK
+	    depends on ZUK_CAMERA
 	    select NEW_LEDS
 	    select LEDS_CLASS
         ---help---
@@ -11,7 +11,7 @@ config MSM_CAMERA_SENSOR
 
 config MSM_CPP
         bool "Qualcomm MSM Camera Post Processing Engine support"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for Camera Post-processing Engine
           The Post processing engine is capable of scaling
@@ -20,7 +20,7 @@ config MSM_CPP
 
 config MSM_CCI
         bool "Qualcomm MSM Camera Control Interface support"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for Camera Control Interface driver only
           for those platforms that have hardware support. This driver
@@ -30,7 +30,7 @@ config MSM_CCI
 
 config MSM_CSI20_HEADER
         bool "Qualcomm MSM CSI 2.0 Header"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for CSI drivers to include 2.0
           header. This header has register macros and its
@@ -40,7 +40,7 @@ config MSM_CSI20_HEADER
 
 config MSM_CSI22_HEADER
         bool "Qualcomm MSM CSI 2.2 Header"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for CSI drivers to include 2.2
           header. This header has register macros and its
@@ -50,7 +50,7 @@ config MSM_CSI22_HEADER
 
 config MSM_CSI30_HEADER
         bool "Qualcomm MSM CSI 3.0 Header"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for CSI drivers to include 3.0
           header. This header has register macros and its
@@ -60,7 +60,7 @@ config MSM_CSI30_HEADER
 
 config MSM_CSI31_HEADER
         bool "Qualcomm MSM CSI 3.1 Header"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for CSI drivers to include 3.0
           header. This header has register macros and its
@@ -70,7 +70,7 @@ config MSM_CSI31_HEADER
 
 config MSM_CSIPHY
         bool "Qualcomm MSM Camera Serial Interface Physical receiver support"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for Camera Serial Interface
           Physical receiver. It deserializes packets and
@@ -79,7 +79,7 @@ config MSM_CSIPHY
 
 config MSM_CSID
         bool "Qualcomm MSM Camera Serial Interface decoder support"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for Camera Serial Interface decoder.
           It supports lane merging and decoding of packets
@@ -88,7 +88,7 @@ config MSM_CSID
 
 config MSM_EEPROM
         bool "Qualcomm MSM Camera ROM Interface for Calibration support"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for ROM Interface for Calibration
           Provides interface for reading the Claibration data.
@@ -97,7 +97,7 @@ config MSM_EEPROM
 
 config MSM_ISPIF
         bool "Qualcomm MSM Image Signal Processing interface support"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for Image Signal Processing interface module.
           This module acts as a crossbar between CSID and VFE. Output
@@ -106,7 +106,7 @@ config MSM_ISPIF
 
 config MSM_ISPIF_V1
         bool "Qualcomm MSM Image Signal Processing interface support"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for Image Signal Processing interface module.
           This module acts as a crossbar between CSID and VFE. Output
@@ -115,7 +115,7 @@ config MSM_ISPIF_V1
 
 config MSM_ISPIF_V2
         bool "Qualcomm MSM Image Signal Processing interface support"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         ---help---
           Enable support for Image Signal Processing interface module.
           This module acts as a crossbar between CSID and VFE. Output
@@ -124,7 +124,7 @@ config MSM_ISPIF_V2
 
 config IMX134
 	bool "Sensor IMX134 (BAYER 8M)"
-	depends on MSMB_CAMERA_ZUK
+	depends on ZUK_CAMERA
 	---help---
 		Sony 8 MP Bayer Sensor with auto focus, uses
 		4 mipi lanes full resolution @30fps and
@@ -133,7 +133,7 @@ config IMX134
 
 config IMX132
 	bool "Sensor IMX132 (BAYER 2M)"
-	depends on MSMB_CAMERA_ZUK
+	depends on ZUK_CAMERA
 	---help---
 		Sony 2 MP Bayer Sensor with auto focus, uses
 		2 mipi lanes, preview config = 1920 x 1080 at 30 fps,
@@ -142,7 +142,7 @@ config IMX132
 
 config OV9724
 	bool "Sensor OV9724 (BAYER 2M)"
-	depends on MSMB_CAMERA_ZUK
+	depends on ZUK_CAMERA
 	---help---
 		OmniVision 2 MP Bayer Sensor, supports 2 mipi lanes,
 		preview and snapshot config at 1280*720 at 30 fps,
@@ -151,7 +151,7 @@ config OV9724
 
 config OV5648
 	bool "Sensor OV5648 (BAYER 5M)"
-	depends on MSMB_CAMERA_ZUK
+	depends on ZUK_CAMERA
 	---help---
 		OmniVision 5 MP Bayer Sensor, only use 1 mipi lane,
 		preview set to 1296*972 at 30 fps,
@@ -160,7 +160,7 @@ config OV5648
 
 config GC0339
 	bool "Sensor GC0339 (BAYER .3M)"
-	depends on MSMB_CAMERA_ZUK
+	depends on ZUK_CAMERA
 	---help---
 		gc0339 is a Galaxycore .3 MP Bayer Sensor.
 		It supports 1 or 2 mipi lanes.
@@ -169,7 +169,7 @@ config GC0339
 
 config OV8825
 	bool "OmniVision OV8825 (BAYER 8MP)"
-	depends on MSMB_CAMERA_ZUK
+	depends on ZUK_CAMERA
 	---help---
 		OmniVision 8 MP Bayer Sensor with auto focus.uses
 		2 mipi lanes, preview config = 1632*1224 30 fps,
@@ -178,7 +178,7 @@ config OV8825
 
 config OV8865
 	bool "OmniVision OV8865 (BAYER 8MP)"
-	depends on MSMB_CAMERA_ZUK
+	depends on ZUK_CAMERA
 	---help---
 		OmniVision 8 MP Bayer Sensor with auto focus.uses
 		4 mipi lanes, preview config = 1632*1224 30 fps,
@@ -187,7 +187,7 @@ config OV8865
 
 config s5k4e1
 	bool "Sensor s5k4e1 (BAYER 5MP)"
-	depends on MSMB_CAMERA_ZUK
+	depends on ZUK_CAMERA
 	---help---
 		Samsung 5 MP Bayer Sensor. It uses 2 mipi lanes,
 		supports 720P preview at 30 fps
@@ -196,7 +196,7 @@ config s5k4e1
 
 config OV12830
 	bool "OmniVision OV12830 (BAYER 12MP)"
-	depends on MSMB_CAMERA_ZUK
+	depends on ZUK_CAMERA
 	---help---
 		OmniVision 12.8 MP Bayer Sensor with auto focus.uses
 		4 mipi lanes, preview config = 2112 * 1500 at 30 fps,
@@ -213,7 +213,7 @@ config MSM_V4L2_VIDEO_OVERLAY_DEVICE
 
 config MSMB_JPEG
 	tristate "Qualcomm MSM Jpeg Encoder Engine support"
-        depends on MSMB_CAMERA_ZUK && (ARCH_MSM8974 || ARCH_MSM8226 || ARCH_APQ8084 || ARCH_MSM8916 || ARCH_MSM)
+        depends on ZUK_CAMERA && (ARCH_MSM8974 || ARCH_MSM8226 || ARCH_APQ8084 || ARCH_MSM8916 || ARCH_MSM)
 	---help---
 	  Enable support for Jpeg Encoder/Decoder
 	  Engine for 8974.
@@ -222,7 +222,7 @@ config MSMB_JPEG
 
 config MSM_GEMINI
 	tristate "Qualcomm MSM Gemini JPEG engine support"
-	depends on MSMB_CAMERA_ZUK && (ARCH_MSM7X30 || ARCH_MSM8X60 || ARCH_MSM8960)
+	depends on ZUK_CAMERA && (ARCH_MSM7X30 || ARCH_MSM8X60 || ARCH_MSM8960)
 	---help---
 	  Enables support for the Gemini JPEG encoder
 	  Engine for 8x60, 7x30 and 8960.
@@ -231,13 +231,13 @@ config MSM_GEMINI
 
 config MSM_FD
 	 tristate "Qualcomm MSM FD face detection engine support"
-	 depends on MSMB_CAMERA_ZUK
+	 depends on ZUK_CAMERA
 	 ---help---
 	    Enables support for the MSM FD face detection engine.
 
 config MSM_JPEGDMA
 	tristate "Qualcomm Technologies Inc. MSM Jpeg dma"
-        depends on MSMB_CAMERA_ZUK
+        depends on ZUK_CAMERA
         select V4L2_MEM2MEM_DEV
 	---help---
 	  Enable support for Jpeg dma engine.
